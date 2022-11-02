@@ -1,0 +1,26 @@
+alert tcp any any -> any 80 (msg:"gilgil.net access"; content:"GET /";content:"Host: "; content:"gilgil.net"; sid:10001; rev:1;)
+alert tls any any -> any 443 (msg:"https:netflix.com access"; content:"netflix.com"; sid:10002; rev:1;)
+alert tcp any any -> any any (msg:"https:qt.io access"; content:"qt.io"; sid:10003; rev:1;)
+alert tcp any any -> any any (msg:"https:facebook.com  access"; content:"facebook.com"; sid:10004; rev:1;)
+alert tcp any any -> any 443 (msg:"https:youtube.com access"; content:"youtube.com"; sid:10005; rev:1;)
+alert tcp any any -> any 443 (msg:"https:google.com access"; content:"google.com"; sid:10006; rev:1;)
+alert tcp any any -> any 443 (msg:"https:afreeca.com access"; content:"afreecatv.com"; sid:10007; rev:1;)
+alert tcp any any -> any 443 (msg:"https:twitter.com access"; content:"twitter.com"; sid:10008; rev:1;)
+alert tcp any any -> any 443 (msg:"https:instagram.com access"; content:"instagram.com"; sid:10009; rev:1;)
+alert tcp any any -> any 443 (msg:"https:naver.com access"; content:"naver.com"; sid:10010; rev:1;)
+alert tcp any any -> any 443 (msg:"https:daum.com access"; content:"daum.com"; sid:10011; rev:1;)
+alert tcp any any -> any 443 (msg:"https:kali.org access"; content:"kali.org"; sid:10012; rev:1;)
+alert tcp any any -> any 443 (msg:"https:kulms.korea.ac.kr access"; content:"kulms.korea.ac.kr"; sid:10013; rev:1;)
+alert tcp any any -> any 443 (msg:"https:wikipedia.org access"; content:"wikipedia.org"; sid:10014; rev:1;)
+alert tcp any any -> any 443 (msg:"https:amazon.com access"; content:"amazon.com"; sid:10015; rev:1;)
+alert tcp any any -> any 443 (msg:"https:bing.com access"; content:"bing.com"; sid:10016; rev:1;)
+alert tcp any any -> any 443 (msg:"https:yahoo.com access"; content:"yahoo.com"; sid:10017; rev:1;)
+alert tcp any any -> any 443 (msg:"https:kakao.com access"; content:"kakao.com"; sid:10018; rev:1;)
+alert tcp any any -> any 443 (msg:"https:coupang.com access"; content:"coupang.com"; sid:10019; rev:1;)
+alert tcp any any -> any 443 (msg:"https:disneyplus.com access"; content:"disneyplus.com"; sid:10020; rev:1;)
+
+alert tcp any any -> any 80 (msg:"tistory.com access"; content:"GET /"; content:"Host: "; sid:10021; rev:1;)
+
+
+
+
